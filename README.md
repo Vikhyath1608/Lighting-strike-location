@@ -104,8 +104,7 @@ Install the required dependencies as listed in the Requirements section.
 ## Contact
 
 - For support or inquiries:
-  <<<<<<< HEAD
-- Email: vikhyathraims0109@gmail.com
-  ==================================
+- Email: vikhyhraims0109@gmail.com
+  ================================
 
   Email: vikhyathraims0109@gmail.com
