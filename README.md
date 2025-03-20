@@ -40,7 +40,7 @@ Ensure you have the following dependencies installed:
 ```bash
 flask_app/
 │── app.py                      # Main Flask application entry point
-│── Main.py                     # Another possible entry script
+│── Main.py                     # Update Database Manually
 │── scheduler.py                 # Periodic task scheduler script
 │── README.md                    # Project documentation
 │── requirements.txt             # List of dependencies
@@ -62,7 +62,7 @@ flask_app/
     │   ├── tokenizer_config.json        # Tokenizer configuration
     │   ├── vocab.txt                    # Vocabulary file for tokenizer
     │
-    ├── lightning_strike_classifier2/    # Possibly another model version or experiment
+    ├── lightning_strike_classifier2/    #  another model version or experiment
         ├── config.json
         ├── model.safetensors
         ├── special_tokens_map.json
