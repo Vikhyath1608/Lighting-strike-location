@@ -105,4 +105,3 @@ Install the required dependencies as listed in the Requirements section.
 
 - For support or inquiries:
   Email: vikhyathraims0109@gmail.com
--Linkedin:https://www.linkedin.com/in/vikhyath-rai-ms/
