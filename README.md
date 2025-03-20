@@ -39,7 +39,6 @@ Ensure you have the following dependencies installed:
 - Download the Trained Models From the Hugging Face
   ```bash
   git clone https://huggingface.co/vikhyathraims/lightning-strike-classifier
-``
  
 ## File Structure
 ```bash
