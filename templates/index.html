@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map Centered on India</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    /* Global styles */
+    html, body {
+      height: 100vh;  /* Using vh for viewport height */
+      margin: 0;
+      font-family: Arial, sans-serif;  /* Setting a base font */
+    }
+
+    /* Map container styles */
+    #map {
+      width: 100%;
+      height: calc(100vh - 50px); /* Subtracting header height */
+      border: 1px solid #ddd;  /* Adding a light border */
+    }
+
+    /* Optional header styles - Modify as needed */
+    header {
+      background-color: #f0f0f0;
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.5em;  /* Adjusting heading size */
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lightning-strike News</h1>
+  </header>
+
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    // Create a map centered on India
+    var map = L.map('map').setView([20.5937, 78.9629], 5);
+
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 90,
+      attribution: 'Vikhyath Rai MS'
+    }).addTo(map);
+
+    // Fetch location data from the backend
+    fetch('/api/locations')
+      .then(response => response.json())
+      .then(data => {
+        data.forEach(location => {
+          var lat = location[0];
+          var lon = location[1];
+          var locationName = location[2];  // Assuming location name is stored in the third column
+          var link = location[3];  // Assuming link is stored in the fourth column
+          var popupContent = `<b>${locationName}</b><br>Lat:${lat}</br>Long:${lon}</br><a href="${link}" target="_blank">News</a>`;
+          var marker = L.marker([lat, lon]).addTo(map);
+          marker.bindPopup(popupContent);
+        });
+      });
+  </script>
+</body>
+</html>
