@@ -36,6 +36,8 @@ Ensure you have the following dependencies installed:
   pip install flask
 
   ```
+- Download the Trained Models From the Hugging Face
+  
 ## File Structure
 ```bash
 Lighting-strike-location/
