@@ -40,7 +40,7 @@ Ensure you have the following dependencies installed:
 
 - Clone the repository:
   ```bash
-  git clone https://github.com/yourusername/lightning-strike-classifier.git
+  git clone https://github.com/Vikhyath1608/Lighting-strike-location.git
   ```
 
 Install the required dependencies as listed in the Requirements section.
