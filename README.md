@@ -37,6 +37,7 @@ Ensure you have the following dependencies installed:
 
   ```
 ## File Structure
+```bash
 flask_app/
 │── app.py                      # Main Flask application entry point
 │── Main.py                     # Another possible entry script
@@ -67,6 +68,7 @@ flask_app/
         ├── special_tokens_map.json
         ├── tokenizer_config.json
         ├── vocab.txt
+```
 
 ## Installation
 
