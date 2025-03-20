@@ -6,6 +6,7 @@
 
 - [About](#about)
 - [Requirements](#requirements)
+- [File Structure](#File-structure)
 - [Installation](#installation)
 - [Process](#Process)
   - [Training the Model](#training-the-model)
@@ -35,6 +36,37 @@ Ensure you have the following dependencies installed:
   pip install flask
 
   ```
+## File Structure
+flask_app/
+│── app.py                      # Main Flask application entry point
+│── Main.py                     # Another possible entry script
+│── scheduler.py                 # Periodic task scheduler script
+│── README.md                    # Project documentation
+│── requirements.txt             # List of dependencies
+├── Database/                    # Stores database-related files
+│
+├── Dataset/                     # Dataset storage (raw & processed)
+│
+├── Input/                       # User input data folder
+│
+├── templates/                   # HTML templates for Flask frontend
+│
+├── Train_model/                 # Model training scripts
+│
+└── Trained_Model/         # Trained models for deployment
+    ├── lightning_strike_classifier/    # Primary ML model directory
+    │   ├── config.json                 # Model configuration file
+    │   ├── model.safetensors            # Serialized model weights (SafeTensors format)
+    │   ├── special_tokens_map.json      # Special tokens mapping (for NLP models)
+    │   ├── tokenizer_config.json        # Tokenizer configuration
+    │   ├── vocab.txt                    # Vocabulary file for tokenizer
+    │
+    ├── lightning_strike_classifier2/    # Possibly another model version or experiment
+        ├── config.json
+        ├── model.safetensors
+        ├── special_tokens_map.json
+        ├── tokenizer_config.json
+        ├── vocab.txt
 
 ## Installation
 
