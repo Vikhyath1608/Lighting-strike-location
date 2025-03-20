@@ -1,3 +1,5 @@
 Download the models from the hugging face 
 https://huggingface.co/vikhyathraims/lightning-strike-classifier
-and save in this folder
+and save in this folder 
+NOTE:
+Refer the File Structue and make changes accordingly
