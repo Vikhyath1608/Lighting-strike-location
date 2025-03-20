@@ -38,7 +38,7 @@ Ensure you have the following dependencies installed:
   ```
 ## File Structure
 ```bash
-flask_app/
+Lighting-strike-location/
 │── app.py                      # Main Flask application entry point
 │── Main.py                     # Update Database Manually
 │── scheduler.py                 # Periodic task scheduler script
