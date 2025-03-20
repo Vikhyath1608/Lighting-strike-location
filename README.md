@@ -122,6 +122,7 @@ Install the required dependencies as listed in the Requirements section.
 
 ## Usage Notes
 
+- Make the change in the paths according to your System in Main.py
 - To directly run the application, use:
   ```bash
   python app.py
